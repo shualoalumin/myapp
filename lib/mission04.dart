@@ -9,8 +9,8 @@ class MyApp extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: const TestScreen()
+    return const MaterialApp(
+        home: TestScreen()
     );
   }
 }

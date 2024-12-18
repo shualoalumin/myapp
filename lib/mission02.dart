@@ -5,12 +5,14 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('mission02'),
+          title: const Text('mission02'),
         ),
 
         body: Center(
@@ -21,12 +23,12 @@ class MyApp extends StatelessWidget {
                 height: 200,
                 color: Colors.blue,
               ),
-              Positioned(
+              const Positioned(
                 right: 20.0,
                 bottom: 20.0,
                 child: Text(
                   'Hello, Flutter!',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: Colors.white,
                   ),
                 ),
